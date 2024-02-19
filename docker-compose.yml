@@ -1,0 +1,31 @@
+version: "3.1"
+services:
+#  medibookingapp:
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile
+#    container_name: medibookingapp
+#    expose:
+#      - 8080
+#    ports:
+#      - 8080:8080
+#    depends_on:
+#      - postgres
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://db-postgres:5432/postgres
+#      - SPRING_DATASOURCE_USERNAME=postgres
+#      - SPRING_DATASOURCE_PASSWORD=mysecretpassword
+#      - SPRING_FLYWAY_URL=jdbc:postgresql://db-postgres:5432/postgres
+#      - SPRING_FLYWAY_USER=postgres
+#      - SPRING_FLYWAY_PASSWORD=mysecretpassword
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=transport
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

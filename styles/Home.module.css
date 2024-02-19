@@ -1,5 +1,18 @@
 .container {
   padding: 0 2rem;
+  display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pageArea {
+    margin-top: 10vh;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
 }
 
 .main {

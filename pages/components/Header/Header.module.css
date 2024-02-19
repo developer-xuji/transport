@@ -1,0 +1,16 @@
+.layout {
+  position: fixed;
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  left: 0;
+}
+
+.navItem {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  line-height: 10vh;
+  text-align: center;
+  border: 1px black solid;
+}
